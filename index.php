@@ -12,20 +12,27 @@
 </head>
 <body>
 <main>
-    <div class="container">
-        <form action="inc/task_create.php" class="form" method="post">
-            <label for="task_name">Put a name for a task
-                <input type="text" name="task_name" placeholder="Name" autocomplete="off">
-            </label>
-            <label for="task_desc">Place for a description(not necessary)
-                <input type="text" name="task_desc" placeholder="Description" autocomplete="off">
-            </label>
-            <button type="submit">Submit</button>
-        </form>
+    <header>
+        <br>
+    </header>
+    <div class="container" style="max-width: 80vw;text-align: center;">
+        <div class="col-12">
+            <form action="inc/task_create.php" class="form" method="post">
+                <label class="form-label" for="task_name">Put a name for a task
+                    <input class="form-control" type="text" name="task_name" placeholder="Name" autocomplete="off"
+                           required>
+                </label><br>
+                <label class="form-label" for="task_desc">Place for a description(not necessary)
+                    <input class="form-control" type="text" name="task_desc" placeholder="Description"
+                           autocomplete="off">
+                </label><br>
+                <button class="btn btn-dark" type="submit">Submit</button>
+            </form>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
