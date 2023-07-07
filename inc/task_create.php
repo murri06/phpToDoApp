@@ -1,8 +1,9 @@
 <?php
 
-$taskName = $_POST['task_name'] ?? '';
+var_dump($_POST);
+$taskName = filter_input(INPUT_POST, 'task_name', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? '';
 $taskName = trim($taskName);
-$taskDesc = $_POST['task_desc'] ?? '';
+$taskDesc = filter_input(INPUT_POST, 'task_desc', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? '';
 
 if ($taskName) {
     if (file_exists('tasks.json')) {
